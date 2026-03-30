@@ -1,6 +1,4 @@
-import { Tour } from '@/types';
-
-export const tours: Tour[] = [
+export const tours = [
     {
         id: "1",
         name: "Khám Phá Sài Gòn",
@@ -8,7 +6,7 @@ export const tours: Tour[] = [
         duration: "1 ngày",
         price: 500000,
         rating: 4.8,
-        image: "https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=500",
+        image: "https://picsum.photos/id/1015/500/300",
         description: "Trải nghiệm trọn vẹn Sài Gòn với các địa danh nổi tiếng: Dinh Độc Lập, Nhà Thờ Đức Bà, Bưu điện Trung tâm, Chợ Bến Thành...",
         itinerary: [
             "07:30 - Đón khách tại trung tâm",
@@ -34,7 +32,7 @@ export const tours: Tour[] = [
         duration: "2 ngày 1 đêm",
         price: 1500000,
         rating: 4.9,
-        image: "https://images.unsplash.com/photo-1582639518794-6c243e3c2cf1?w=500",
+        image: "https://picsum.photos/id/104/500/300",
         description: "Tour Đà Lạt 2 ngày khám phá thiên đường mộng mơ: Hồ Xuân Hương, Thung Lũng Tình Yêu, Đồi Mộng Mơ, Chợ Đà Lạt...",
         itinerary: [
             "Ngày 1: Sài Gòn - Đà Lạt",
@@ -63,7 +61,7 @@ export const tours: Tour[] = [
         duration: "3 ngày 2 đêm",
         price: 2800000,
         rating: 4.9,
-        image: "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=500",
+        image: "https://picsum.photos/id/96/500/300",
         description: "Khám phá thiên đường biển đảo Phú Quốc với những bãi biển đẹp, lặn ngắm san hô, thưởng thức hải sản tươi ngon.",
         itinerary: [
             "Ngày 1: Sài Gòn - Phú Quốc",
@@ -94,7 +92,7 @@ export const tours: Tour[] = [
         duration: "2 ngày 1 đêm",
         price: 2200000,
         rating: 4.8,
-        image: "https://images.unsplash.com/photo-1620905626516-5d4c0e15d72e?w=500",
+        image: "https://picsum.photos/id/15/500/300",
         description: "Khám phá kỳ quan thiên nhiên thế giới Vịnh Hạ Long, tham quan hang động, chèo thuyền kayak, ngắm cảnh hoàng hôn trên vịnh.",
         itinerary: [
             "Ngày 1: Hà Nội - Hạ Long",

@@ -1,33 +1,34 @@
-'use client';
-import { useParams } from 'next/navigation';
-import Link from 'next/link';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import { tours } from '@/data/tours';
-import { Tour } from '@/types';
+import { useParams, Link } from 'react-router-dom';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import { tours } from '../data/tours';
 
 export default function TourDetail() {
-    const params = useParams();
-    const tour: Tour | undefined = tours.find(t => t.id === params.id);
+    const { id } = useParams();
+    const tour = tours.find(t => t.id === id);
 
-    const formatPrice = (price: number): string => {
+    const formatPrice = (price) => {
         return new Intl.NumberFormat('vi-VN').format(price) + 'đ';
     };
 
-    const renderStars = (rating: number): string => {
+    const renderStars = (rating) => {
         return '⭐'.repeat(Math.floor(rating));
     };
 
     if (!tour) {
         return (
-            <div className="min-h-screen flex items-center justify-center">
-                <div className="text-center">
-                    <h1 className="text-2xl font-bold mb-4">Không tìm thấy tour</h1>
-                    <Link href="/" className="text-blue-600 hover:underline">
-                        Quay lại trang chủ
-                    </Link>
+            <>
+                <Header />
+                <div className="min-h-screen flex items-center justify-center">
+                    <div className="text-center">
+                        <h1 className="text-2xl font-bold mb-4">Không tìm thấy tour</h1>
+                        <Link to="/" className="text-blue-600 hover:underline">
+                            Quay lại trang chủ
+                        </Link>
+                    </div>
                 </div>
-            </div>
+                <Footer />
+            </>
         );
     }
 
@@ -36,7 +37,7 @@ export default function TourDetail() {
             <Header />
             <main className="bg-gray-50 min-h-screen py-12">
                 <div className="container mx-auto px-4">
-                    <Link href="/#tours" className="text-blue-600 hover:underline mb-4 inline-block">
+                    <Link to="/#tours" className="text-blue-600 hover:underline mb-4 inline-block">
                         ← Quay lại danh sách tour
                     </Link>
 
@@ -68,7 +69,7 @@ export default function TourDetail() {
                             <div className="mb-8">
                                 <h2 className="text-2xl font-bold mb-4">Lịch trình</h2>
                                 <ul className="space-y-2">
-                                    {tour.itinerary.map((item: string, index: number) => (
+                                    {tour.itinerary.map((item, index) => (
                                         <li key={index} className="flex items-start">
                                             <span className="text-blue-600 mr-2">•</span>
                                             <span className="text-gray-700">{item}</span>
@@ -80,7 +81,7 @@ export default function TourDetail() {
                             <div className="mb-8">
                                 <h2 className="text-2xl font-bold mb-4">Bao gồm</h2>
                                 <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                                    {tour.includes.map((item: string, index: number) => (
+                                    {tour.includes.map((item, index) => (
                                         <li key={index} className="flex items-center">
                                             <span className="text-green-500 mr-2">✓</span>
                                             <span className="text-gray-700">{item}</span>

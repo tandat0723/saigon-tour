@@ -1,22 +1,22 @@
-import Link from 'next/link';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
     return (
         <header className="bg-white shadow-md">
             <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-                <Link href="/" className="text-2xl font-bold text-blue-600">
+                <Link to="/" className="text-2xl font-bold text-blue-600">
                     SaigonTour
                 </Link>
                 <nav className="space-x-6">
-                    <Link href="/" className="text-gray-600 hover:text-blue-600 transition">
+                    <Link to="/" className="text-gray-600 hover:text-blue-600 transition">
                         Trang chủ
                     </Link>
-                    <Link href="/#tours" className="text-gray-600 hover:text-blue-600 transition">
+                    <a href="#tours" className="text-gray-600 hover:text-blue-600 transition">
                         Tour
-                    </Link>
-                    <Link href="/contact" className="text-gray-600 hover:text-blue-600 transition">
+                    </a>
+                    <a href="#contact" className="text-gray-600 hover:text-blue-600 transition">
                         Liên hệ
-                    </Link>
+                    </a>
                 </nav>
             </div>
         </header>

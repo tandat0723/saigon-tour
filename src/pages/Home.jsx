@@ -1,7 +1,7 @@
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import TourCard from "@/components/TourCard";
-import { tours } from '@/data/tours';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import TourCard from '../components/TourCard';
+import { tours } from '../data/tours';
 
 export default function Home() {
     return (
@@ -19,9 +19,12 @@ export default function Home() {
                             <p className="text-xl mb-8">
                                 Những hành trình đáng nhớ cùng SaigonTour
                             </p>
-                            <button className="bg-yellow-500 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition">
+                            <a
+                                href="#tours"
+                                className="bg-yellow-500 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition inline-block"
+                            >
                                 Khám phá ngay
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </section>

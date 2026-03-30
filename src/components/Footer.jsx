@@ -17,12 +17,9 @@ export default function Footer() {
                             <p className="text-gray-300">📧 Email: info@saigontour.com</p>
                         </div>
                         <div>
-                            <h3 className="text-xl font-bold mb-4">Theo dõi</h3>
-                            <div className="flex space-x-4">
-                                <a href="#" className="text-gray-300 hover:text-blue-400 transition">Facebook</a>
-                                <a href="#" className="text-gray-300 hover:text-blue-400 transition">Instagram</a>
-                                <a href="#" className="text-gray-300 hover:text-green-500 transition">WhatsApp</a>
-                            </div>
+                            <h3 className="text-xl font-bold mb-4">Địa chỉ</h3>
+                            <p className="text-gray-300">123 Đường Lê Lợi, Quận 1</p>
+                            <p className="text-gray-300">TP. Hồ Chí Minh</p>
                         </div>
                     </div>
                     <div className="text-center mt-8 pt-4 border-t border-gray-700">

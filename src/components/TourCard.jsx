@@ -1,16 +1,11 @@
-import Link from 'next/link';
-import { Tour } from '@/types';
+import { Link } from 'react-router-dom';
 
-interface TourCardProps {
-    tour: Tour;
-}
-
-export default function TourCard({ tour }: TourCardProps) {
-    const formatPrice = (price: number): string => {
+export default function TourCard({ tour }) {
+    const formatPrice = (price) => {
         return new Intl.NumberFormat('vi-VN').format(price) + 'đ';
     };
 
-    const renderStars = (rating: number): string => {
+    const renderStars = (rating) => {
         return '⭐'.repeat(Math.floor(rating));
     };
 
@@ -30,7 +25,7 @@ export default function TourCard({ tour }: TourCardProps) {
                         {formatPrice(tour.price)}
                     </span>
                     <Link
-                        href={`/tours/${tour.id}`}
+                        to={`/tour/${tour.id}`}
                         className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
                     >
                         Xem chi tiết
