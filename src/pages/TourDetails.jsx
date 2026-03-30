@@ -43,7 +43,7 @@ export default function TourDetail() {
 
                     <div className="bg-white rounded-lg shadow-lg overflow-hidden">
                         <img src={tour.image} alt={tour.name} className="w-full h-96 object-cover" />
-                        
+
                         <div className="p-8">
                             <div className="flex justify-between items-start mb-4">
                                 <div>
