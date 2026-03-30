@@ -6,7 +6,7 @@ export const tours = [
         duration: "1 ngày",
         price: 500000,
         rating: 4.8,
-        image: "https://picsum.photos/id/1015/500/300",
+        image: "https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress&cs=tinysrgb&w=500",
         description: "Trải nghiệm trọn vẹn Sài Gòn với các địa danh nổi tiếng: Dinh Độc Lập, Nhà Thờ Đức Bà, Bưu điện Trung tâm, Chợ Bến Thành...",
         itinerary: [
             "07:30 - Đón khách tại trung tâm",
@@ -32,7 +32,7 @@ export const tours = [
         duration: "2 ngày 1 đêm",
         price: 1500000,
         rating: 4.9,
-        image: "https://picsum.photos/id/104/500/300",
+        image: "https://images.pexels.com/photos/257006/pexels-photo-257006.jpeg?auto=compress&cs=tinysrgb&w=500",
         description: "Tour Đà Lạt 2 ngày khám phá thiên đường mộng mơ: Hồ Xuân Hương, Thung Lũng Tình Yêu, Đồi Mộng Mơ, Chợ Đà Lạt...",
         itinerary: [
             "Ngày 1: Sài Gòn - Đà Lạt",
@@ -61,7 +61,7 @@ export const tours = [
         duration: "3 ngày 2 đêm",
         price: 2800000,
         rating: 4.9,
-        image: "https://picsum.photos/id/96/500/300",
+        image: "https://images.pexels.com/photos/6998035/pexels-photo-6998035.jpeg?auto=compress&cs=tinysrgb&w=500",
         description: "Khám phá thiên đường biển đảo Phú Quốc với những bãi biển đẹp, lặn ngắm san hô, thưởng thức hải sản tươi ngon.",
         itinerary: [
             "Ngày 1: Sài Gòn - Phú Quốc",
@@ -92,7 +92,7 @@ export const tours = [
         duration: "2 ngày 1 đêm",
         price: 2200000,
         rating: 4.8,
-        image: "https://picsum.photos/id/15/500/300",
+        image: "https://images.pexels.com/photos/2112508/pexels-photo-2112508.jpeg?auto=compress&cs=tinysrgb&w=500",
         description: "Khám phá kỳ quan thiên nhiên thế giới Vịnh Hạ Long, tham quan hang động, chèo thuyền kayak, ngắm cảnh hoàng hôn trên vịnh.",
         itinerary: [
             "Ngày 1: Hà Nội - Hạ Long",
@@ -116,5 +116,37 @@ export const tours = [
             "Vé tham quan",
             "Kayak"
         ]
+    }
+];
+
+// Dữ liệu slides cho Hero Slider
+export const heroSlides = [
+    {
+        id: 1,
+        image: "https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        title: "Sài Gòn Về Đêm",
+        description: "Thành phố không bao giờ ngủ với những ánh đèn lung linh",
+        subText: "Trải nghiệm Sài Gòn sôi động về đêm"
+    },
+    {
+        id: 2,
+        image: "https://images.pexels.com/photos/257006/pexels-photo-257006.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        title: "Phố Cổ Sài Gòn",
+        description: "Nét đẹp hoài cổ giữa lòng thành phố hiện đại",
+        subText: "Khám phá những con phố mang đậm dấu ấn lịch sử"
+    },
+    {
+        id: 3,
+        image: "https://images.pexels.com/photos/6998035/pexels-photo-6998035.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        title: "Ẩm Thực Đường Phố",
+        description: "Hương vị đặc trưng khó quên của Sài Gòn",
+        subText: "Thưởng thức ẩm thực đa dạng từ khắp mọi miền"
+    },
+    {
+        id: 4,
+        image: "https://images.pexels.com/photos/2112508/pexels-photo-2112508.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        title: "Landmark 81",
+        description: "Biểu tượng mới của thành phố năng động",
+        subText: "Ngắm toàn cảnh Sài Gòn từ trên cao"
     }
 ];

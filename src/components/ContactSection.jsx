@@ -1,5 +1,5 @@
 export default function ContactSection() {
-    const phoneNumber = '84912345678';
+    const phoneNumber = '84564957525';
     const whatsappLink = `https://wa.me/${phoneNumber}?text=Chào%20SaigonTour,%20tôi%20muốn%20tư%20vấn%20về%20tour%20du%20lịch!`;
 
     return (
