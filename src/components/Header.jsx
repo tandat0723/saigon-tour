@@ -44,7 +44,7 @@ export default function Header() {
                                 <h1 className="text-sm sm:text-xl md:text-2xl lg:text-3xl font-bold bg-blue-700 bg-clip-text 
                                             text-transparent whitespace-nowrap"
                                 >
-                                    Bui Motobike Tour
+                                    Bụi Motobike Tour
                                 </h1>
                                 <p className="text-xs text-gray-600 block">
                                     Saigon by night
