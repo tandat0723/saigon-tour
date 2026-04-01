@@ -3,15 +3,13 @@ export default function Footer() {
     return (
         <footer className="bg-[#023166] text-white">
             <div className="container mx-auto px-4 py-12 md:py-16">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-                    <div className="space-y-4">
-                        <div className="flex items-center gap-3">
-                            <h3 className="text-xl font-bold whitespace-nowrap">
-                                Bụi Motobike Tour
-                            </h3>
-                            <p className="text-xs text-gray-600">
-                                Saigon by night
-                            </p>
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 lg:gap-12">
+                    <div className="space-y-1">
+                        <div className="flex items-center gap-3 text-xl font-bold">
+                            Bụi Motobike Tour
+                        </div>
+                        <div className="text-xs text-gray-600">
+                            Saigon by night
                         </div>
                     </div>
 
@@ -37,8 +35,8 @@ export default function Footer() {
                         </ul>
                     </div>
 
-                    <div>
-                        <h4 className="text-lg font-semibold mb-4 relative inline-block">
+                    <div className="hidden sm:inline-block">
+                        <h4 className="text-lg font-semibold mb-4 relative">
                             Policies
                             <span className="absolute bottom-0 left-0 w-8 h-0.5 bg-teal-500 mt-1"></span>
                         </h4>
