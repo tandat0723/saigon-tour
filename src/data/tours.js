@@ -1,58 +1,36 @@
 export const tours = [
     {
         id: "1",
-        name: "Bụi Saigon by Night",
-        location: "Ho Chi Minh City",
-        duration: "3 hours",
-        price: 500000,
-        rating: 4.8,
+        category: "Food Tour",
+        name: "Bụi Saigon By Night",
         image: "https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress&cs=tinysrgb&w=500",
-        description: "Trải nghiệm trọn vẹn Sài Gòn với các địa danh nổi tiếng: Dinh Độc Lập, Nhà Thờ Đức Bà, Bưu điện Trung tâm, Chợ Bến Thành...",
-        itinerary: [
-            "07:30 - Đón khách tại trung tâm",
-            "08:30 - Tham quan Dinh Độc Lập",
-            "10:00 - Nhà Thờ Đức Bà & Bưu điện",
-            "11:30 - Ăn trưa với đặc sản Sài Gòn",
-            "13:30 - Tham quan Chợ Bến Thành",
-            "15:00 - Tham quan Bảo tàng Chứng tích",
-            "17:00 - Kết thúc tour"
-        ],
-        includes: [
-            "Xe đưa đón",
-            "Hướng dẫn viên",
-            "Bữa trưa",
-            "Nước uống",
-            "Bảo hiểm du lịch"
-        ]
+        priceUSD: 39,
+        priceVND: 975000,
+        startTime: "6:00pm",
+        duration: 3.5,
+        description: "Feel like a local when immersing yourself into the nightlife and explore the local places that most tourists don't often see.",
     },
     {
-        id: "2",
-        name: "Bụi Food Tour",
-        location: "Ho Chi Minh City",
-        duration: "3.5 hours",
-        price: 1500000,
-        rating: 4.9,
+        id: "3",
+        category: "Night Tour",
+        name: "Historical Saigon Tour",
         image: "https://images.pexels.com/photos/257006/pexels-photo-257006.jpeg?auto=compress&cs=tinysrgb&w=500",
-        description: "Tour Đà Lạt 2 ngày khám phá thiên đường mộng mơ: Hồ Xuân Hương, Thung Lũng Tình Yêu, Đồi Mộng Mơ, Chợ Đà Lạt...",
-        itinerary: [
-            "Ngày 1: Sài Gòn - Đà Lạt",
-            "06:00 - Khởi hành từ Sài Gòn",
-            "12:00 - Đến Đà Lạt, ăn trưa",
-            "14:00 - Tham quan Hồ Xuân Hương",
-            "16:00 - Đồi Mộng Mơ",
-            "19:00 - Ăn tối, dạo chợ đêm",
-            "Ngày 2: Đà Lạt - Sài Gòn",
-            "08:00 - Ăn sáng, thăm Thung Lũng Tình Yêu",
-            "11:00 - Trả phòng, ăn trưa",
-            "13:00 - Khởi hành về Sài Gòn"
-        ],
-        includes: [
-            "Xe giường nằm 2 chiều",
-            "Khách sạn 3 sao",
-            "3 bữa chính + 1 bữa sáng",
-            "Vé tham quan",
-            "Hướng dẫn viên"
-        ]
+        priceUSD: 49,
+        priceVND: 1225000,
+        startTime: "6:00pm",
+        duration: 4,
+        description: "Discover the rich history of Saigon through its iconic landmarks: Reunification Palace, Notre Dame Cathedral, and War Remnants Museum.",
+    },
+    {
+        id: "4",
+        category: "Night Tour",
+        name: "Saigon After Dark",
+        image: "https://images.pexels.com/photos/2112508/pexels-photo-2112508.jpeg?auto=compress&cs=tinysrgb&w=500",
+        priceUSD: 35,
+        priceVND: 875000,
+        startTime: "6:00pm",
+        duration: 3,
+        description: "Experience Saigon's vibrant nightlife, from hidden speakeasy bars to rooftop views of the city skyline.",
     }
 ];
 

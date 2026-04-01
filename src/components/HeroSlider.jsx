@@ -16,7 +16,7 @@ export default function HeroSlider() {
     };
 
     return (
-        <section className="relative h-75 sm:h-85 md:h-100 sm:rounded-2xl overflow-hidden">
+        <section className="relative h-95 sm:h-95 md:h-115 sm:rounded-2xl overflow-hidden">
             {/* Slides với hiệu ứng fade */}
             {heroSlides.map((slide, index) => (
                 <div

@@ -10,31 +10,25 @@ export default function Home() {
         <>
             <Header />
             <main>
-                {/* Hero + Introduction Section*/}
-                <section className="pt-24 md:pt-32">
-                    <div className="xl:container mx-auto sm:px-4 2xl:px-24">
-                        <div className="flex flex-col lg:flex-row gap-8 md:gap-12 items-center">
+                <section className="pt-24 md:pt-32 xl:container mx-auto sm:px-4 2xl:px-25 items-start">
+                    <div className="flex flex-col lg:flex-row gap-8 md:gap-12">
+                        <div className="w-full xl:w-4/10">
+                            <Introduction />
+                        </div>
 
-                            {/* Left - Introduction (30%) */}
-                            <div className="w-full xl:w-3/10">
-                                <Introduction />
-                            </div>
-
-                            {/* Right - Hero Slider (70%) */}
-                            <div className="w-full xl:w-7/10">
-                                <HeroSlider />
-                            </div>
+                        <div className="w-full xl:w-6/10">
+                            <HeroSlider />
                         </div>
                     </div>
                 </section>
 
                 {/* Tours Section */}
-                <section id="tours" className="py-16">
-                    <div className="container mx-auto px-4">
-                        <h2 className="text-3xl text-blue-600 font-bold text-center mb-8">
-                            Tour in Sai Gon
+                <section id="tours" className="pt-16">
+                    <div className="xl:container mx-auto px-4">
+                        <h2 className="text-3xl text-[#0461CA] font-bold text-center mb-8">
+                            Bụi Tour in Sai Gon
                         </h2>
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 xl:px-15">
                             {tours.map((tour) => (
                                 <TourCard key={tour.id} tour={tour} />
                             ))}
