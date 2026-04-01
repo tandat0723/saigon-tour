@@ -13,6 +13,9 @@ export default function TourDetail() {
         return new Intl.NumberFormat('vi-VN').format(price) + ' VND';
     };
 
+    const phoneNumber = '84564957525';
+    const whatsappLink = `https://wa.me/${phoneNumber}?text=Hi%20BuiMotobikeTour.%20I%20want%20to%20book%20a%20tour!`;
+
     if (!tour) {
         return (
             <>
@@ -20,7 +23,7 @@ export default function TourDetail() {
                 <div className=" min-h-screen flex items-center justify-center">
                     <div className="text-center">
                         <h1 className="text-2xl font-bold mb-4">Không tìm thấy tour</h1>
-                        <Link to="/" className="text-primary hover:underline">
+                        <Link to="/" className="text-[#0461CA] hover:underline">
                             Quay lại trang chủ
                         </Link>
                     </div>
@@ -33,11 +36,11 @@ export default function TourDetail() {
     return (
         <>
             <Header />
-            <main className="bg-gray-50 min-h-screen pt-24 md:pt-32">
+            <main className="bg-gray-50 min-h-screen pt-26 md:pt-32">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                     {/* Breadcrumb */}
                     <div className="mb-6 text-sm text-gray-500">
-                        <Link to="/" className="hover:text-primary">Trang chủ</Link>
+                        <Link to="/" className="hover:text-[#0461CA]">Trang chủ</Link>
                         <span className="mx-2">/</span>
                         <span className="text-gray-700">{tour.name}</span>
                     </div>
@@ -58,7 +61,7 @@ export default function TourDetail() {
                             {/* Title & Basic Info */}
                             <div className="bg-white rounded-2xl p-6 shadow-lg mb-6">
                                 <div className="flex items-center gap-2 mb-3">
-                                    <span className="text-yellow-600 text-xs font-semibold px-3 py-1 rounded-full">
+                                    <span className="text-orange-500 text-xs font-semibold px-3 py-1 rounded-full">
                                         {tour.category}
                                     </span>
                                     <span className="flex items-center gap-1 text-gray-500 text-sm">
@@ -66,9 +69,13 @@ export default function TourDetail() {
                                         {tour.duration} hours tour
                                     </span>
                                 </div>
-                                <h1 className="text-2xl md:text-3xl font-bold text-[#0461CA] mb-4">
+                                <h1 className="text-2xl md:text-3xl font-bold text-[#0461CA] mb-1">
                                     {tour.name}
                                 </h1>
+                                <h5 className="text-sm text-orange-500 md:text-md mb-4">
+                                    {tour.otherName}
+                                </h5>
+
                                 <p className="text-gray-600 leading-relaxed">
                                     {tour.description}
                                 </p>
@@ -80,22 +87,22 @@ export default function TourDetail() {
                                     <button
                                         onClick={() => setActiveTab('itinerary')}
                                         className={`flex-1 py-4 text-center font-semibold transition ${activeTab === 'itinerary'
-                                            ? 'text-primary border-b-2 border-primary'
+                                            ? 'text-[#0461CA] border-b-2 border-primary'
                                             : 'text-gray-500 hover:text-gray-700'
                                             }`}
                                     >
                                         <i className="fas fa-list-ul mr-2"></i>
-                                        Lịch trình
+                                        Schedule
                                     </button>
                                     <button
                                         onClick={() => setActiveTab('includes')}
                                         className={`flex-1 py-4 text-center font-semibold transition ${activeTab === 'includes'
-                                            ? 'text-primary border-b-2 border-primary'
+                                            ? 'text-[#0461CA] border-b-2 border-primary'
                                             : 'text-gray-500 hover:text-gray-700'
                                             }`}
                                     >
                                         <i className="fas fa-check-circle mr-2"></i>
-                                        Bao gồm
+                                        Include
                                     </button>
                                 </div>
 
@@ -104,7 +111,7 @@ export default function TourDetail() {
                                         <div className="space-y-4">
                                             {tour.itinerary?.map((item, index) => (
                                                 <div key={index} className="flex gap-3">
-                                                    <div className="flex-shrink-0 w-8 h-8 bg-primary/10 text-primary rounded-full flex items-center 
+                                                    <div className="flex-shrink-0 w-8 h-8 bg-primary/10 text-[#0461CA] rounded-full flex items-center 
                                                         justify-center font-semibold"
                                                     >
                                                         {index + 1}
@@ -150,31 +157,32 @@ export default function TourDetail() {
                                 </div>
 
                                 {/* Tour Details */}
-                                <div className="space-y-3 mb-6">
+                                <div className="space-y-3 mb-6 text-gray-600">
                                     <div className="flex items-center gap-3">
                                         <i className="fas fa-calendar-alt"></i>
-                                        <span className="text-gray-600">Start at {tour.startTime} daily</span>
+                                        <span>Start at {tour.startTime} daily</span>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <i class="fa-solid fa-location-dot"></i>
-                                        <span className="text-gray-600">Ho Chi Minh City</span>
+                                        <i className="far fa-clock"></i>
+                                        {tour.duration} hours tour
+                                    </div>
+                                    <div className="flex items-center gap-3">
+                                        <i className="fa-solid fa-location-dot"></i>
+                                        <span>Ho Chi Minh City</span>
+                                    </div>
+                                    <div className="flex items-center gap-3">
+                                        <i class="fa-solid fa-user-group"></i>
+                                        <span>Private or small group</span>
                                     </div>
                                 </div>
 
-                                {/* Booking Button */}
-                                <button className="w-full bg-primary text-white py-3 rounded-xl font-semibold hover:bg-primary/90 transition mb-3">
-                                    Đặt tour ngay
-                                </button>
-
                                 {/* WhatsApp Contact */}
-                                <button className="w-full border border-primary text-primary py-3 rounded-xl font-semibold hover:bg-primary/5 transition flex items-center justify-center gap-2">
+                                <button onClick={() => window.open(whatsappLink, '_blank')} className="w-full cursor-pointer text-white py-3 
+                                    rounded-2xl font-semibold bg-orange-500 hover:bg-orange-600 transition flex items-center justify-center gap-2"
+                                >
                                     <i className="fab fa-whatsapp"></i>
-                                    Tư vấn qua WhatsApp
+                                    Booking via WhatsApp
                                 </button>
-
-                                <p className="text-xs text-gray-400 text-center mt-4">
-                                    * Hủy tour miễn phí 24h trước khi khởi hành
-                                </p>
                             </div>
                         </div>
                     </div>

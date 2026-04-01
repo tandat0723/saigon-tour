@@ -10,7 +10,7 @@ export default function Home() {
         <>
             <Header />
             <main>
-                <section className="pt-24 md:pt-32 xl:container mx-auto sm:px-4 2xl:px-25 items-start">
+                <section className="pt-26 md:pt-32 xl:container mx-auto sm:px-4 2xl:px-25 items-start">
                     <div className="flex flex-col lg:flex-row gap-8 md:gap-12">
                         <div className="w-full xl:w-4/10">
                             <Introduction />
@@ -23,10 +23,10 @@ export default function Home() {
                 </section>
 
                 {/* Tours Section */}
-                <section id="tours" className="pt-16">
+                <section id="tours" className="py-16">
                     <div className="xl:container mx-auto px-4">
                         <h2 className="text-3xl text-[#0461CA] font-bold text-center mb-8">
-                            Bụi Tour in Sai Gon
+                            Tour in Sai Gon
                         </h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 xl:px-15">
                             {tours.map((tour) => (
