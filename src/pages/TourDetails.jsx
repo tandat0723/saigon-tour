@@ -38,18 +38,15 @@ export default function TourDetail() {
             <Header />
             <main className="bg-gray-50 min-h-screen pt-26 md:pt-32">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                    {/* Breadcrumb */}
                     <div className="mb-6 text-sm text-gray-500">
                         <Link to="/" className="hover:text-[#0461CA]">Trang chủ</Link>
                         <span className="mx-2">/</span>
                         <span className="text-gray-700">{tour.name}</span>
                     </div>
 
-                    {/* Main Content */}
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                         {/* Left Column - Images & Info */}
                         <div className="lg:col-span-2">
-                            {/* Main Image */}
                             <div className="bg-white rounded-2xl overflow-hidden shadow-lg mb-6">
                                 <img
                                     src={tour.image}
@@ -61,7 +58,7 @@ export default function TourDetail() {
                             {/* Title & Basic Info */}
                             <div className="bg-white rounded-2xl p-6 shadow-lg mb-6">
                                 <div className="flex items-center gap-2 mb-3">
-                                    <span className="text-orange-500 text-xs font-semibold px-3 py-1 rounded-full">
+                                    <span className="text-orange-500 text-xs font-semibold pr-3 py-1 rounded-full">
                                         {tour.category}
                                     </span>
                                     <span className="flex items-center gap-1 text-gray-500 text-sm">

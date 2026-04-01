@@ -44,7 +44,7 @@ export default function WhatsAppButton() {
                 "
             >
                 {/* Icon WhatsApp */}
-                <div className="relative w-14 h-14 md:w-16 md:h-16 flex items-center justify-center">
+                <div className="relative w-10 h-10 md:w-14 md:h-14 flex items-center justify-center">
                     <i className="fab fa-whatsapp text-3xl md:text-4xl"></i>
                 </div>
 
