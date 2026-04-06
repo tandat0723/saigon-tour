@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../assets/logo.png';
 
 export default function Header() {
     const [isVisible, setIsVisible] = useState(true);
@@ -33,15 +34,13 @@ export default function Header() {
             >
                 <div className="2xl:container mx-auto px-2 sm:px-6 md:px-10 2xl:px-35">
                     <div className="flex items-center justify-center">
-                        {/* Logo và tên ở trung tâm */}
                         <div className="text-center">
                             <Link to="/" className="inline-block">
-                                <h1 className="text-sm sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#0461CA] whitespace-nowrap">
-                                    Bụi Motobike Tour
-                                </h1>
-                                <p className="text-xs text-gray-600">
-                                    Saigon by night
-                                </p>
+                                <img
+                                    src={logo}
+                                    alt="Bụi Motobike Tour"
+                                    className="h-8 sm:h-10 md:h-12 lg:h-14 w-auto mx-auto object-contain"
+                                />
                             </Link>
                         </div>
                     </div>
