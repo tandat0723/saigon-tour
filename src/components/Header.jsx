@@ -27,7 +27,7 @@ export default function Header() {
         <>
             <header
                 className={`
-                    fixed left-0 w-full bg-white py-1 sm:py-3 transition-transform duration-300 
+                    fixed left-0 w-full bg-white py-1 transition-transform duration-300 
                     ease-in-out z-40 top-12 sm:top-9
                     ${isVisible ? 'translate-y-0' : '-translate-y-full'}
                 `}
@@ -39,7 +39,7 @@ export default function Header() {
                                 <img
                                     src={logo}
                                     alt="Bụi Motobike Tour"
-                                    className="h-8 sm:h-10 md:h-12 lg:h-14 w-auto mx-auto object-contain"
+                                    className="h-14 sm:h-16 md:h-18 lg:h-20 w-auto mx-auto object-contain"
                                 />
                             </Link>
                         </div>

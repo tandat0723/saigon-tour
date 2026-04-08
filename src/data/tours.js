@@ -14,26 +14,14 @@ export const tours = [
     {
         id: "3",
         category: "Night Tour",
-        name: "Historical Saigon Tour",
+        name: "Bụi Sightseeing By Night",
         otherName: "",
         image: "https://images.pexels.com/photos/257006/pexels-photo-257006.jpeg?auto=compress&cs=tinysrgb&w=500",
-        priceUSD: 49,
-        priceVND: 1225000,
-        startTime: "6:00pm",
-        duration: 4,
-        description: "Discover the rich history of Saigon through its iconic landmarks: Reunification Palace, Notre Dame Cathedral, and War Remnants Museum.",
-    },
-    {
-        id: "4",
-        category: "Night Tour",
-        name: "Saigon After Dark",
-        otherName: "",
-        image: "https://images.pexels.com/photos/2112508/pexels-photo-2112508.jpeg?auto=compress&cs=tinysrgb&w=500",
-        priceUSD: 35,
-        priceVND: 875000,
+        priceUSD: 30,
+        priceVND: 789000,
         startTime: "6:00pm",
         duration: 3,
-        description: "Experience Saigon's vibrant nightlife, from hidden speakeasy bars to rooftop views of the city skyline.",
+        description: "Discover the rich history of Saigon through its iconic landmarks: Reunification Palace, Notre Dame Cathedral, and War Remnants Museum.",
     }
 ];
 
@@ -41,23 +29,18 @@ export const tours = [
 export const heroSlides = [
     {
         id: 1,
-        image: "https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress&cs=tinysrgb&w=1600",
-        title: "Sài Gòn Về Đêm",
-        description: "Thành phố không bao giờ ngủ với những ánh đèn lung linh",
-        subText: "Trải nghiệm Sài Gòn sôi động về đêm"
+        publicId: "buitour/istockphoto-458991547-612x612_nzaqtk.jpg",
     },
     {
         id: 2,
-        image: "https://images.pexels.com/photos/257006/pexels-photo-257006.jpeg?auto=compress&cs=tinysrgb&w=1600",
-        title: "Phố Cổ Sài Gòn",
-        description: "Nét đẹp hoài cổ giữa lòng thành phố hiện đại",
-        subText: "Khám phá những con phố mang đậm dấu ấn lịch sử"
+        publicId: "buitour/istockphoto-2171627383-612x612_p3gtv4.jpg",
     },
     {
         id: 4,
-        image: "https://images.pexels.com/photos/2112508/pexels-photo-2112508.jpeg?auto=compress&cs=tinysrgb&w=1600",
-        title: "Landmark 81",
-        description: "Biểu tượng mới của thành phố năng động",
-        subText: "Ngắm toàn cảnh Sài Gòn từ trên cao"
+        publicId: "buitour/istockphoto-1324017792-612x612_ewa851.jpg",
+    },
+    {
+        id: 5,
+        publicId: "buitour/b099ba9c-5471-4476-931f-85fdcb234ece.png",
     }
 ];

@@ -1,3 +1,4 @@
+import logo from '../assets/logo.png';
 
 export default function Footer() {
     return (
@@ -5,12 +6,11 @@ export default function Footer() {
             <div className="container mx-auto px-4 py-12 md:py-16">
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 lg:gap-12">
                     <div className="space-y-1">
-                        <div className="flex items-center gap-3 text-xl font-bold">
-                            Bụi Motobike Tour
-                        </div>
-                        <div className="text-xs text-gray-600">
-                            Saigon by night
-                        </div>
+                        <img
+                            src={logo}
+                            alt="Bụi Motobike Tour"
+                            className="h-14 sm:h-16 md:h-18 lg:h-20 w-auto mx-auto object-contain"
+                        />
                     </div>
 
                     <div>
