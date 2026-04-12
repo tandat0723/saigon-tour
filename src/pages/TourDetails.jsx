@@ -5,8 +5,8 @@ import Footer from '../components/Footer';
 import { tours } from '../data/tours';
 
 export default function TourDetail() {
-    const { id } = useParams();
-    const tour = tours.find(t => t.id === id);
+    const { slug } = useParams();
+    const tour = tours.find(t => t.slug === slug);
     const [activeTab, setActiveTab] = useState('itinerary');
 
     const formatVND = (price) => {
@@ -39,7 +39,7 @@ export default function TourDetail() {
             <main className="bg-gray-50 min-h-screen pt-30 md:pt-35">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="mb-6 text-sm text-gray-500">
-                        <Link to="/" className="hover:text-[#0461CA]">Trang chủ</Link>
+                        <Link to="/" className="hover:text-[#0461CA]">Home</Link>
                         <span className="mx-2">/</span>
                         <span className="text-gray-700">{tour.name}</span>
                     </div>
@@ -73,7 +73,7 @@ export default function TourDetail() {
                                     {tour.otherName}
                                 </h5>
 
-                                <p className="text-gray-600 leading-relaxed">
+                                <p className="text-shadow-black leading-relaxed">
                                     {tour.description}
                                 </p>
                             </div>
@@ -168,7 +168,7 @@ export default function TourDetail() {
                                         <span>Ho Chi Minh City</span>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <i class="fa-solid fa-user-group"></i>
+                                        <i className="fa-solid fa-user-group"></i>
                                         <span>Private or small group</span>
                                     </div>
                                 </div>
@@ -178,7 +178,7 @@ export default function TourDetail() {
                                     rounded-2xl font-semibold bg-orange-500 hover:bg-orange-600 transition flex items-center justify-center gap-2"
                                 >
                                     <i className="fab fa-whatsapp"></i>
-                                    Booking via WhatsApp
+                                    Booking on WhatsApp
                                 </button>
                             </div>
                         </div>

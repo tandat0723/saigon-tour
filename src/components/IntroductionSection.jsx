@@ -3,7 +3,7 @@ export default function Introduction() {
         <div className="px-4 pt-6 md:pt-0">
             <div className="mb-4">
                 <span className="text-blue-600 md:text-3xl font-bold">
-                    Welcome to &nbsp;
+                    Welcome to&nbsp;
                     <span className="md:text-3xl font-bold text-pink-600 mt-2 mb-4">
                         Bụi Motobike Tour
                     </span>
