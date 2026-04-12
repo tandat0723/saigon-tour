@@ -10,7 +10,7 @@ export default function Home() {
         <>
             <Header />
             <main>
-                <section className="pt-30 md:pt-40 xl:container mx-auto sm:px-4 2xl:px-25 items-start">
+                <section className="pt-25 md:pt-40 xl:container mx-auto sm:px-4 2xl:px-25 items-start">
                     <div className="flex flex-col lg:flex-row gap-8 md:gap-12">
                         <div className="w-full lg:w-4/10">
                             <Introduction />

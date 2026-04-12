@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { heroSlides } from '../data/tours';
 import { AdvancedImage } from '@cloudinary/react';
 import { cld } from '../lib/cloudinary';
-import { fill } from "@cloudinary/url-gen/actions/resize";
+import { scale } from "@cloudinary/url-gen/actions/resize";
 import { byRadius } from "@cloudinary/url-gen/actions/roundCorners";
 import { auto } from "@cloudinary/url-gen/qualifiers/quality";
 import { auto as formatAuto } from "@cloudinary/url-gen/qualifiers/format";
@@ -23,7 +23,7 @@ export default function HeroSlider() {
 
     const getCloudinaryImage = (publicId) => {
         return cld.image(publicId)
-            .resize(fill().width(1200).height(500))
+            .resize(scale().width(1200))
             .roundCorners(byRadius(16))
             .format(formatAuto())
             .quality(auto());
@@ -31,7 +31,6 @@ export default function HeroSlider() {
 
     return (
         <section className="relative h-95 sm:h-95 md:h-115 sm:rounded-2xl overflow-hidden shadow-xl">
-            {/* Slides - chỉ ảnh, không overlay, không text */}
             {heroSlides.map((slide, index) => {
                 const cloudinaryImg = getCloudinaryImage(slide.publicId);
 
@@ -49,7 +48,6 @@ export default function HeroSlider() {
                 );
             })}
 
-            {/* Dots Indicator */}
             <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
                 {heroSlides.map((_, index) => (
                     <button

@@ -5,7 +5,6 @@ export default function ScrollToTop() {
     const { pathname } = useLocation();
 
     useEffect(() => {
-        // Cuộn lên đầu trang với hiệu ứng mượt
         window.scrollTo({
             top: 0,
             left: 0,

@@ -5,7 +5,7 @@ export default function WhatsAppButton() {
     const [lastScrollY, setLastScrollY] = useState(0);
 
     const phoneNumber = '84564957525';
-    const whatsappLink = `https://wa.me/${phoneNumber}?text=BụiMotobikeTour`;
+    const whatsappLink = `https://wa.me/${phoneNumber}`;
 
     useEffect(() => {
         const handleScroll = () => {
@@ -35,8 +35,7 @@ export default function WhatsAppButton() {
                 rel="noopener noreferrer"
                 className="
                     group relative flex items-center justify-center
-                    bg-gradient-to-r from-green-500 to-green-600
-                    hover:from-green-600 hover:to-green-700
+                    bg-green-500 hover:to-green-700
                     text-white rounded-full shadow-lg
                     transition-all duration-300
                     hover:scale-110 hover:shadow-2xl
@@ -51,12 +50,12 @@ export default function WhatsAppButton() {
                 {/* Tooltip */}
                 <span className="
                     absolute right-full mr-3 px-3 py-2 
-                    bg-gray-800 text-white text-sm rounded-lg 
+                    bg-gray-800 text-white text-xs md:text-sm rounded-lg 
                     whitespace-nowrap opacity-0 invisible
                     group-hover:opacity-100 group-hover:visible
                     transition-all duration-300
                 ">
-                    Chat với chúng tôi
+                    Chat with us!
                     <span className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-full 
                         border-4 border-transparent border-l-gray-800"></span>
                 </span>

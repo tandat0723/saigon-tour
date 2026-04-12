@@ -29,18 +29,26 @@ export const tours = [
 export const heroSlides = [
     {
         id: 1,
-        publicId: "buitour/istockphoto-458991547-612x612_nzaqtk.jpg",
+        publicId: "buitour/tron-le-eilpDNi_pV4-unsplash_mebupu.jpg",
     },
     {
         id: 2,
-        publicId: "buitour/istockphoto-2171627383-612x612_p3gtv4.jpg",
+        publicId: "buitour/georgios-domouchtsidis-UtbUQWxElVs-unsplash_cco2kq.jpg",
+    },
+    {
+        id: 3,
+        publicId: "buitour/tuan-nguyen-qc9Jw78MoYs-unsplash_jxjybl.jpg",
     },
     {
         id: 4,
-        publicId: "buitour/istockphoto-1324017792-612x612_ewa851.jpg",
+        publicId: "buitour/thai-tong-kN8p_MyJlYI-unsplash_mahwq9.jpg",
     },
     {
         id: 5,
-        publicId: "buitour/b099ba9c-5471-4476-931f-85fdcb234ece.png",
+        publicId: "buitour/francois-le-nguyen-QiEeivf6Zag-unsplash_tlibg0.jpg",
+    },
+    {
+        id: 6,
+        publicId: "buitour/hanna-lazar-wJgiRFSw-0Q-unsplash_vaxdsa.jpg",
     }
 ];

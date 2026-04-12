@@ -14,13 +14,13 @@ export default function TourDetail() {
     };
 
     const phoneNumber = '84564957525';
-    const whatsappLink = `https://wa.me/${phoneNumber}?text=Hi%20BuiMotobikeTour.%20I%20want%20to%20book%20a%20tour!`;
+    const whatsappLink = `https://wa.me/${phoneNumber}`;
 
     if (!tour) {
         return (
             <>
                 <Header />
-                <div className=" min-h-screen flex items-center justify-center">
+                <div className="min-h-screenflex items-center justify-center">
                     <div className="text-center">
                         <h1 className="text-2xl font-bold mb-4">Không tìm thấy tour</h1>
                         <Link to="/" className="text-[#0461CA] hover:underline">
@@ -36,7 +36,7 @@ export default function TourDetail() {
     return (
         <>
             <Header />
-            <main className="bg-gray-50 min-h-screen pt-26 md:pt-32">
+            <main className="bg-gray-50 min-h-screen pt-30 md:pt-35">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="mb-6 text-sm text-gray-500">
                         <Link to="/" className="hover:text-[#0461CA]">Trang chủ</Link>
@@ -108,7 +108,7 @@ export default function TourDetail() {
                                         <div className="space-y-4">
                                             {tour.itinerary?.map((item, index) => (
                                                 <div key={index} className="flex gap-3">
-                                                    <div className="flex-shrink-0 w-8 h-8 bg-primary/10 text-[#0461CA] rounded-full flex items-center 
+                                                    <div className="shrink-0 w-8 h-8 bg-primary/10 text-[#0461CA] rounded-full flex items-center 
                                                         justify-center font-semibold"
                                                     >
                                                         {index + 1}
