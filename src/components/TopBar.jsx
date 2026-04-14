@@ -9,15 +9,13 @@ export default function TopBar() {
                     <span className="text-xs sm:text-sm">
                         Last-minute booking or questions, please WhatsApp us
                     </span>
-                    <a
-                        href={whatsappLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1 bg-orange-500 text-white py-1 rounded-full text-xs sm:text-sm whitespace-nowrap"
+                    <button
+                        onClick={() => window.open(whatsappLink, '_blank')}
+                        className="inline-flex items-center gap-1 bg-orange-500 text-white py-1 rounded-full text-xs sm:text-sm whitespace-nowrap cursor-pointer"
                     >
                         <i className="fa-brands fa-whatsapp"></i>
                         (+84) 56 4957 525
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>

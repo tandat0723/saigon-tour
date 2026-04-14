@@ -6,17 +6,15 @@ export default function Footer() {
         <footer className="py-4 md:py-8 border-t border-gray-200 mt-12">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-center gap-3 max-w-xs mx-auto mb-3">
-                    <a
-                        href={whatsappLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                    <button
+                        onClick={() => window.open(whatsappLink, '_blank')}
                         className="text-center group cursor-pointer block flex-1"
                     >
                         <div className="flex items-center justify-center mx-auto mb-2">
                             <i className="fa-brands fa-whatsapp text-[#0461CA] text-xl md:text-2xl"></i>
                         </div>
                         <h3 className="font-semibold text-[#0461CA] text-xs md:text-sm">WhatsApp</h3>
-                    </a>
+                    </button>
 
                     <div className="w-px h-6 bg-gray-200"></div>
 

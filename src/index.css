@@ -106,3 +106,8 @@ header {
 .animate-fadeInUp {
     animation: fadeInUp 0.8s ease-out forwards;
 }
+
+a[href]:hover::after {
+    display: none !important;
+    content: none !important;
+}
