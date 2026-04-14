@@ -30,7 +30,7 @@ export default function HeroSlider() {
     };
 
     return (
-        <section className="relative h-95 sm:h-95 md:h-115 sm:rounded-2xl overflow-hidden shadow-xl">
+        <section className="relative h-95 sm:h-95 md:h-115 md:rounded-2xl overflow-hidden shadow-xl">
             {heroSlides.map((slide, index) => {
                 const cloudinaryImg = getCloudinaryImage(slide.publicId);
 
